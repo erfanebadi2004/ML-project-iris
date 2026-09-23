@@ -20,3 +20,5 @@ rfc_model.fit(X_train, y_train)
 y_predict = rfc_model.predict(X_test)
 
 print(classification_report(y_predict, y_test))
+
+joblib.dump(rfc_model, "random_farest.joblib")
